@@ -11,7 +11,7 @@ class Project extends Component {
               <ProjectRow 
                 key={ project.id }
                 name={ project.name }
-                updatedAt={project.update_at}
+                updatedAt={project.updated_at}
                 createdAt={project.created_at}
               />
             )

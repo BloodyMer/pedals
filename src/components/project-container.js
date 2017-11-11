@@ -10,7 +10,7 @@ class ProjectContainer extends Component {
   }
 
   componentWillMount() {
-    let url = 'http://localhost:3000/projects'
+    let url = 'http://localhost:3001/api/v1/projects'
     fetch(url)
       .then(response => {
         return response.json()
