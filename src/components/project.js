@@ -8,12 +8,7 @@ class Project extends Component {
         {
           this.props.projects.map((project) => {
             return (
-              <ProjectRow 
-                key={ project.id }
-                name={ project.name }
-                updatedAt={project.updated_at}
-                createdAt={project.created_at}
-              />
+              <ProjectRow key={ project.id } project={project} />
             )
           })
         }
