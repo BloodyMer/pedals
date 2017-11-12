@@ -9,6 +9,7 @@ import Projects from './components/projects'
 // import Components from './components/components'
 import About from './components/about'
 import Page404 from './components/page404'
+// import ProjectComponents from './components/projects/project-components'
 
 const AppRoutes = () =>
   <App>
@@ -17,6 +18,7 @@ const AppRoutes = () =>
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/" component={Projects} />
       <Route exact path="/about" component={About} />
+      {/*<Route exact path="/projects/:id/components" component={ProjectComponents} />*/}
       <Route component={Page404} />
     </Switch>
   </App>

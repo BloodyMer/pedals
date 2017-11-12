@@ -17,17 +17,16 @@ class Header extends Component {
     const { title, items } = this.props
 
     return (
-      <div className="header">
-        <div className="logo">
-          <img src={Logo} alt="logo" />
-          <h2>{title}</h2>
-
-          <ul className="menu">
-            {items && items.map((item, key) =>
-              <li key={key}><Link to={item.url}>{item.title}</Link></li>
-            )}
-          </ul>
+      <div className="Header">
+        <div className="Logo">
+          <img src={Logo} alt="Logo" />
         </div>
+        <h2 className="title">{title}</h2>
+        <ul className="Menu">
+          {items && items.map((item, key) =>
+            <li key={key}><Link to={item.url}>{item.title}</Link></li>
+          )}
+        </ul>
       </div>
     )
   }

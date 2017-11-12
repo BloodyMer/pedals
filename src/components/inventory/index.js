@@ -6,7 +6,7 @@ class Inventory extends Component {
   render() {
     return (
       <div className="Inventory">
-        <h1><InventoryContainer /></h1>
+        <InventoryContainer />
       </div>
     )
   }
