@@ -6,17 +6,17 @@ import { Route, Switch } from 'react-router-dom'
 import App from './components/App'
 import Inventory from './components/inventory'
 import Projects from './components/projects'
-import Components from './components/components'
+// import Components from './components/components'
 import About from './components/about'
 import Page404 from './components/page404'
 
 const AppRoutes = () =>
   <App>
     <Switch>
-      <Route path="/inventory" component={Inventory} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/" component={App} />
-      <Route path="/about" component={About} />
+      <Route exact path="/inventory" component={Inventory} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/" component={Projects} />
+      <Route exact path="/about" component={About} />
       <Route component={Page404} />
     </Switch>
   </App>
